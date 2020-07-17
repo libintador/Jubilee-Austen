@@ -117,7 +117,8 @@ h2 span {
 }
 
 h3 {
-
+    width: 80%;
+    margin: 24px 33px;
 }
 
 p {
@@ -197,12 +198,11 @@ footer p {
 }
 
 footer .content-wrapper {
-    width: 55%;
+    width: 90%;
     margin: 50px 0;
 }
 
 footer .contact {
-    margin-bottom: 50px;
     flex-flow: column wrap;
 }
 
@@ -224,6 +224,8 @@ footer .social-icons ul {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    padding-left: 0;
+    margin: 0;
 }
 
 footer .social-icons p {
@@ -246,6 +248,16 @@ footer .social-icons p i {
     flex-flow: row wrap;
 }
 
+.cv h3 {
+    font-weight: normal;
+}
+
+.cv span {
+    padding-left: 4px;
+    font-weight: 700;
+    color: #c49075;
+}
+
 .cv-header {
     display: flex;
     justify-content: center;
@@ -259,6 +271,25 @@ footer .social-icons p i {
     align-items: center;
 }
 
+.contact h2 {
+    font-style: normal;
+}
+
+.contact h3 {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.contact a {
+    color: #c49075;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.contact i {
+    padding-right: 5px;
+}
+
 .hero-area {
     display: flex;
     justify-content: center;
@@ -267,7 +298,7 @@ footer .social-icons p i {
 }
 
 .hero-area h2 {
-    font-size: 2em;
+    font-size: 2.25em;
 }
 
 .about {
@@ -277,11 +308,21 @@ footer .social-icons p i {
     flex-flow: row wrap;
 }
 
+.about h2 {
+    font-size: 1.8em;
+}
+
 .about-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+}
+
+.about-content p {
+    font-size: 1em;
+    line-height: 2.5;
+    color: #7f7f7f;
 }
 
 .work {
@@ -303,11 +344,19 @@ footer .social-icons p i {
     text-align: center;
 }
 
+.work-items h3 {
+    font-size: 1.5em;
+}
 
+.work-items p {
+    font-size: 1.125em;
+    line-height: 1.875;
+    font-family: 'Lora', serif;
+}
 
-
-
-
+.social-icons i {
+    color: #c49075;
+}
 
 
 
