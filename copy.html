@@ -88,199 +88,236 @@ textarea {
    ======================================================================= */
 /* General Styles */
 
-/*html {
-    font-size: 16px;
-}
-
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1em;
     color: #2b2b2b;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-ul {
-    list-style-type: none;
+#about, #work, #contact {
+    /*height: 600px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
-    font-family: 'Lora', serif;
-    color: #bbc085;
-    font-size: 30px;
-}
-
-h2 {
-    font-family: 'Lora', serif;
-}
-
-h2 span {
-    color: #9b9b9b;
-}
-
-h3 {
-
-}
-
-p {
-
-}
-
-img {
-    width: 100%;
-}
+/****** GRID ******/
 
 .full-width {
-    width: 90%;
-    margin: 20px 0;
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .half-width {
-    width: 75%;
-    margin: 20px 0;
-}
-
-/* ------------------ Base Header - Footer Styles ----------------- */
-
-/*header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #eeeded;
-}
-
-header .full-width {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-}
-
-header .half-width {
+    margin: 0 auto;
+    width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header nav {
+.third-width {
+    margin: 0 auto;
+    width: 400px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
-    max-width: 250px;
-    text-transform: uppercase;
-    font-size: 1.125em;
 }
 
-header nav ul {
+/****** HEADER ******/
+
+header {
+    background: url('../img/hero.png');
+    background-size: cover;
+    /*height: 800px;*/
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
-    width: 100%;
-    padding-left: 0;
-    margin: 0;
 }
 
-header nav ul li a {
+header h1 {
+    color: #bbc085;
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    padding: 65px 0 65px 25px;
+
+}
+
+nav {
+    padding: 75px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    /*display: inline-block;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
     color: #828282;
     font-size: 18px;
+    padding-left: 80px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.hero-area {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    background: url('../img/hero.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
+header h2 {
+    color: #2b2b2b;
+    font-family: 'Lora', serif;
+    font-size: 72px;
+    line-height: 80px;
+    padding: 20px 0 20px 25px;
+    width: 1000px;
 }
 
-.hero-area h2 {
-    font-size: 1.6em;
-    max-width: 90%;
+header h2 span {
+    color: #9b9b9b;
 }
 
-#about {
+/***** ABOUT *****/
+
+#about .full-width {
+    padding: 80px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #about h2 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    padding-left: 50px;
 }
 
 #about p {
-    color: #7f7f7f;
+    color: #7F7F7F;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-#about .full-width {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-}
-
-#about .half-width {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/***** WORK *****/
 
 #work {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9ceb7;
+    background: #F9CEB7;
+    text-align: center;
 }
 
 #work .full-width {
+    padding: 115px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
 }
 
 #work .third-width {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
 }
 
+#work img {
+    padding-bottom: 30px;
+}
+
+#work h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 auto;
+    width: 190px;
+}
+
+#work p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 35px;
+}
+
+/***** CONTACT *****/
+
 #contact {
+    background: #ebebeb;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
 }
 
 #contact .full-width {
+    padding: 110px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
 }
 
 #contact .half-width {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
 }
 
-#contact .half-width ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+#contact img #contact-img {
+    border: 12px solid #ffffff;
+    margin-left: 25px;
 }
 
+#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
+    padding-left: 115px;
+}
+
+#contact #envelope {
+    padding: 0 10px 0 115px;
+}
+
+#contact h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+#contact #email-header{
+    font-size: 32px;
+    font-weight: lighter;
+    line-height: 44px;
+    margin: -30px 0 5px 0;
+}
+
+#contact #socialmedia-header {
+    font-size: 29px;
+    font-weight: 900;
+    line-height: 44px;
+    margin: 40px 0 0 0;
+}
+
+#contact a {
+    color: #c49075;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+#contact ul li {
+    /*display: inline-block;*/
+}
+
+#contact ul img {
+    font-size: 32px;
+    padding-right: 48px;
+}
 
 
 /* ==========================================================================
