@@ -121,8 +121,8 @@ h3 {
     margin: 24px 33px;
 }
 
-p {
-
+a {
+    text-decoration: none;
 }
 
 img {
@@ -202,6 +202,18 @@ footer .content-wrapper {
     margin: 50px 0;
 }
 
+.footer-content h2 {
+    font-size: 1.8em;
+    margin: 40px 0 10px;
+}
+
+footer .link-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 footer .contact {
     flex-flow: column wrap;
 }
@@ -241,18 +253,11 @@ footer .social-icons p i {
     font-size: 1.125em;
 }
 
-.cv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-.cv h3 {
+.cv-header {
     font-weight: normal;
 }
 
-.cv span {
+.cv-header span {
     padding-left: 4px;
     font-weight: 700;
     color: #c49075;
@@ -290,6 +295,14 @@ footer .social-icons p i {
     padding-right: 5px;
 }
 
+.social-icons i {
+    color: #c49075;
+}
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* Hero Area */
+
 .hero-area {
     display: flex;
     justify-content: center;
@@ -300,6 +313,8 @@ footer .social-icons p i {
 .hero-area h2 {
     font-size: 2.25em;
 }
+
+/* About */
 
 .about {
     display: flex;
@@ -324,6 +339,8 @@ footer .social-icons p i {
     line-height: 2.5;
     color: #7f7f7f;
 }
+
+/* Work */
 
 .work {
     display: flex;
@@ -354,16 +371,30 @@ footer .social-icons p i {
     font-family: 'Lora', serif;
 }
 
-.social-icons i {
-    color: #c49075;
-}
-
-
 
 /* ==========================================================================
    Work Page
    ======================================================================= */
 
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: #f9ceb7;
+}
+
+.projects .content-wrapper {
+    margin-bottom: 0;
+}
+
+.projects .content-wrapper h3 {
+    margin: 0;
+}
+
+.projects article {
+    margin-bottom: 50px;
+}
 
 
    /* ==========================================================================
@@ -455,26 +486,109 @@ footer .social-icons p i {
       These examples override the primary ('mobile first') styles.
       Modify as content requires.
       ======================================================================= */
-   @media only screen and (min-width: 768px) {
-   /*Tablet styles here*/
+@media only screen and (min-width: 768px) {
+/*Tablet styles here*/
+/* General styles */
+    .content-wrapper {
+        max-width: 640px;
+        margin: 100px 0;
+    }
 
-       /* ==========================================================================
-       Work Page
-       ========================================================================== */
+    /* Header */
+
+    header {
+        justify-content: space-around;
+        padding: 33px 0;
+    }
+
+    header .content-wrapper {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    header nav {
+        width: 30%;
+    }
+
+    header nav ul {
+
+    }
+
+    .header-divider {
+        display: none;
+    }
+
+    /* Hero Area */
+
+    /* About */
+    .about .content-wrapper {
+        margin: 50px 0;
+    }
+
+    .about .content-wrapper .about-content {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .about .content-wrapper .about-content p {
+        width: 45%;
+        margin: 0;
+    }
+
+    /* Work */
+
+    .work .content-wrapper {
+        margin: 50px 0;
+    }
+
+    .work-items h3 {
+        width: 90%;
+    }
 
 
-   }
+    /* Footer */
+    footer .content-wrapper {
+        width: 90%;
+        margin: 70px 0;
+    }
 
-   @media only screen and (min-width: 1200px) {
-   /*Desktop styles here*/
+    .footer-content h2 {
+
+    }
+
+    footer .link-items {
+        flex-flow: row wrap;
+    }
+
+    footer .contact {
+        margin-bottom: 0;
+        width: 50%;
+    }
+
+    footer .social {
+        width: 50%;
+    }
 
 
-   /* ==========================================================================
-      Work Page
-      ========================================================================== */
 
 
-   }
+/* ==========================================================================
+    Work Page
+    ========================================================================== */
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+
+
+/* ==========================================================================
+    Work Page
+    ========================================================================== */
+
+
+}
 
 
    @media only screen and (min-width: 35em) {
