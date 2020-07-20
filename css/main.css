@@ -769,66 +769,20 @@ footer .social-icons p i {
         justify-content: space-between;
     }
 
-    footer .footer-content {
+    footer article figure,
+    footer article .footer-content {
         flex-flow: row wrap;
         justify-content: space-between;
-        width: 100%;
     }
 
-    footer .footer-content figure {
-        max-width: 30%;
-    }
-
-    footer .footer-content .footer-copy {
-        flex-flow: column wrap;
-        width: 50%;
-        justify-content: flex-start;
-    }
-
-    footer .footer-copy h2 {
-
-    }
-
-    footer .footer-copy .link-items {
-        flex-flow: column wrap;
-
-    }
-
-    .social h3 {
-        width: 500px;
-        margin: 24px 0;
-    }
-
-    footer .contact {
-        justify-content: flex-start;
-        width: 100%;
-    }
-
-    .contact h3 {
-        justify-content: flex-start;
-        max-width: 100%;
-        margin: 24px 0;
-    }
-
-    .contact a {
-        display: flex;
+    .email-header,
+    .footer-content address a i,
+    .cv-header,
+    .social-header {
         justify-content: flex-start;
     }
 
 
-
-    .social {
-
-    }
-
-    .social h3 .email-header {
-        margin: 0;
-    }
-
-    .social h3 .social-header {
-        margin: 0;
-        max-width: 100%;
-    }
 
 
 /* ==========================================================================
@@ -838,20 +792,6 @@ footer .social-icons p i {
     .contact-section .content-wrapper h2 {
         width:
     }
-
-/* ==========================================================================
-   FAQ Page
-   ========================================================================== */
-    .faq h2 {
-        width: 100%;
-    }
-
-
-
-/* ==========================================================================
-    Work Page
-    ========================================================================== */
-
 
 }
 
