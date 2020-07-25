@@ -196,120 +196,56 @@ footer {
     background-color: #ebebeb;
 }
 
-footer h2 {
-    font-size: 1.8em;
-    margin: 40px 0 10px;
+footer div {
     text-align: center;
 }
 
-footer h3 {
-    margin-left: 0;
-    margin-right: 0;
+footer h2 {
+    margin: 40px 0 20px;
 }
 
 footer p {
-    margin: 0;
+    margin: 5px 0 0;
 }
 
-footer .content-wrapper {
-    width: 90%;
-    margin: 50px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-footer figure {
-    justify-content: center;
-}
-
-footer .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
+footer h3 {
     width: 100%;
+    margin: 5px 0 0;
 }
 
-footer .contact h3 {
-    font-style: normal;
+.email-header,
+.cv-header {
     font-weight: 400;
-    display: flex;
-    width: 300px;
 }
 
-footer .contact a {
-    color: #c49075;
+footer p {
     font-weight: 700;
-    font-style: normal;
 }
 
-footer .contact i {
+footer a,
+footer a i {
+    color: #c49075;
+}
+
+footer a i {
     padding-right: 5px;
 }
 
-.email-header {
-    justify-content: center;
-}
-
-footer .social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-.contact .social-header {
-    justify-content: center;
+.cv-header span {
     font-weight: 700;
+}
+
+.social-header {
+    margin: 40px 0 5px;
 }
 
 footer .social-icons {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
-    align-items: center;
-}
-
-footer .social-icons ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
     padding-left: 0;
-    margin: 0;
 }
 
-footer .social-icons p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-
-footer .social-icons p i {
-    font-size: 1.125em;
-}
-
-.cv-header span {
-    padding-left: 4px;
-    font-weight: 700;
-    color: #c49075;
-}
-
-.cv-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    font-weight: normal;
-}
-
-.social-icons i {
-    color: #c49075;
-}
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
@@ -571,117 +507,22 @@ footer .social-icons p i {
 
     /* Footer */
 
-    footer {
-
-
-
-    }
-
     footer article {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
     }
 
-    footer article figure,
-    footer article div {
-        width: 50%;
-    }
-
-    footer h2 {
-
-    }
-
-    footer h3 {
-
-    }
-
-    footer p {
-
-    }
-
-    footer .content-wrapper {
-
-
-
-    }
-
-    footer figure {
-        margin: 40px 0;
-    }
-
-    .footer-content {
-
-
-    }
-
-    footer .contact {
-        justify-content: flex-start;
-    }
-
-    footer .contact h3 {
-
-    }
-
-    footer .contact a {
-        justify-content: flex-start;
-    }
-
-    footer .contact i {
-
-    }
-
-    .email-header a {
-    }
-
-    footer .social {
-
-
-    }
-
-    .contact .social-header {
-
-    }
-
-    footer .social-icons {
-        width: 300px;
-
-    }
-
-    footer .social-icons ul {
-        display: flex;
-
-    }
-
-    footer .social-icons ul li {
-
+    footer div {
         text-align: left;
     }
 
-    footer .social-icons p {
-
-
+    footer h2 {
+        margin-top: 16px;
+        font-size: 1.5em;
     }
 
-    footer .social-icons p i {
-
-    }
-
-    .cv-header span {
-
-
-
-    }
-
-    .cv-header {
-
-
-
-    }
-
-    .social-icons i {
-
+    footer .social-icons {
+        justify-content: space-between;
     }
 
 
@@ -754,7 +595,6 @@ footer .social-icons p i {
     .work-items {
         justify-content: space-between;
         align-items: flex-start;
-
     }
 
     .work-items article {
@@ -763,36 +603,34 @@ footer .social-icons p i {
 
     /* Footer */
 
-    footer .content-wrapper {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
+    footer h2 {
+        font-size: 2.25em;
     }
 
-    footer article figure,
-    footer article .footer-content {
-        flex-flow: row wrap;
-        justify-content: space-between;
+    footer h3,
+    footer p {
+        font-size: 2em;
     }
 
-    .email-header,
-    .footer-content address a i,
-    .cv-header,
     .social-header {
-        justify-content: flex-start;
+        font-size: 1.8em;
     }
 
-
+    footer .social-icons {
+        max-width: 350px;
+    }
 
 
 /* ==========================================================================
    Work Page
    ========================================================================== */
-    .mission h2,
-    .contact-section .content-wrapper h2 {
-        width:
+    header nav ul {
+        justify-content: flex-end;
     }
 
+    .projects h3 {
+        font-size: 2em;
+    }
 }
 
 
