@@ -129,6 +129,10 @@ img {
     width: 100%;
 }
 
+figure {
+    margin: 0;
+}
+
 .content-wrapper {
     width: 90%;
     margin: 50px 0;
@@ -196,6 +200,10 @@ footer {
     background-color: #ebebeb;
 }
 
+footer figure {
+    border: 7px solid #ffffff;
+}
+
 footer div {
     text-align: center;
 }
@@ -254,8 +262,16 @@ footer .social-icons {
 .hero-area {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
+    background: url('../img/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 420px;
+}
+
+.hero-area .content-wrapper {
+    margin-top: 20px;
 }
 
 .hero-area h2 {
@@ -336,8 +352,14 @@ footer .social-icons {
     margin-bottom: 0;
 }
 
-.projects .content-wrapper h3 {
+.projects figure {
+    border: 7px solid #ebebeb;
+}
+
+.projects h3 {
     margin: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .projects .project-items {
