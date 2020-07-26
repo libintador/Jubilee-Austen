@@ -244,7 +244,7 @@ footer a i {
 }
 
 .social-header {
-    margin: 40px 0 5px;
+    margin: 40px 0 15px;
 }
 
 footer .social-icons {
@@ -335,6 +335,10 @@ footer .social-icons {
     font-family: 'Lora', serif;
 }
 
+.work-items p i {
+    font-size: 4em;
+    color: #c49075;
+}
 
 /* ==========================================================================
    Work Page
@@ -357,7 +361,7 @@ footer .social-icons {
 }
 
 .projects h3 {
-    margin: 0;
+    margin: 30px 0 10px;
     width: 100%;
     text-align: center;
 }
@@ -477,7 +481,6 @@ footer .social-icons {
     /* Header */
 
     header {
-        justify-content: space-around;
         padding: 33px 0;
     }
 
@@ -487,12 +490,17 @@ footer .social-icons {
     }
 
     header nav {
-        width: 50%;
+        display: flex;
+        justify-content: flex-end;
     }
 
     header nav ul {
-        justify-content: space-between;
-        width: 100%;
+        justify-content: flex-end;
+        width: 70%;
+    }
+
+    header a {
+        padding-left: 50px;
     }
 
     .header-divider {
@@ -500,6 +508,10 @@ footer .social-icons {
     }
 
     /* Hero Area */
+
+    .hero-area h2 {
+        font-size: 2.8em;
+    }
 
     /* About */
     .about .content-wrapper {
@@ -534,17 +546,32 @@ footer .social-icons {
         justify-content: space-between;
     }
 
+    footer figure,
+    footer div {
+        width: 45%;
+    }
+
+    footer figure {
+        height: 100%;
+    }
+
     footer div {
         text-align: left;
     }
 
     footer h2 {
-        margin-top: 16px;
-        font-size: 1.5em;
+        margin-top: 0;
+        font-size: 1.8em;
+    }
+
+    footer h3,
+    footer p {
+        font-size: 1.2em;
     }
 
     footer .social-icons {
         justify-content: space-between;
+        width: 85%;
     }
 
 
@@ -552,9 +579,9 @@ footer .social-icons {
     Work Page
     ========================================================================== */
 
-    header nav ul {
+    /*header nav ul {
         justify-content: flex-end;
-    }
+    }*/
 
     .projects .content-wrapper {
         margin-top: 50px;
@@ -586,6 +613,11 @@ footer .social-icons {
     }
 
 /* Hero */
+
+    .hero-area {
+        min-height: 700px;
+    }
+
     .hero-area h2 {
         width: ;
         font-size: 4.3em;
