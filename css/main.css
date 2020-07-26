@@ -251,7 +251,7 @@ footer .social-icons {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    padding-left: 0;
+    padding: 0 50px;
 }
 
 
@@ -571,7 +571,8 @@ footer .social-icons {
 
     footer .social-icons {
         justify-content: space-between;
-        width: 85%;
+        width: 80%;
+        padding: 0;
     }
 
 
@@ -642,8 +643,9 @@ footer .social-icons {
     }
 
     /* Work */
-    .work h3 {
-        width: 70%;
+    .work-items h3 {
+        width: 59%;
+        margin: 0 68px;
     }
 
     .work-items {
@@ -657,21 +659,30 @@ footer .social-icons {
 
     /* Footer */
 
+    footer article {
+        justify-content: space-around;
+    }
+
+    footer figure,
+    footer div {
+        width: 33%;
+    }
+
     footer h2 {
-        font-size: 2.25em;
+        font-size: 2.1em;
     }
 
     footer h3,
     footer p {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .social-header {
-        font-size: 1.8em;
+        font-size: 1.3em;
     }
 
     footer .social-icons {
-        max-width: 350px;
+        max-width: 250px;
     }
 
 
