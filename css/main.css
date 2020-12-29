@@ -287,6 +287,10 @@ footer .social-icons {
     flex-flow: row wrap;
 }
 
+.about .content-wrapper {
+    margin: 30px 0;
+}
+
 .about h2 {
     font-size: 1.8em;
 }
@@ -598,13 +602,13 @@ footer .social-icons {
     }
 
     .about .content-wrapper .about-content {
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         justify-content: space-between;
     }
 
     .about .content-wrapper .about-content p {
-        width: 45%;
-        margin: 0;
+        width: 100%;
+        margin: 20px 0;
     }
 
     /* Work */
@@ -726,7 +730,7 @@ footer .social-icons {
 
 /* About */
     .about .content-wrapper {
-        margin: 100px 0;
+        margin: 50px 0;
     }
 
     .about .content-wrapper .about-content {
@@ -739,7 +743,7 @@ footer .social-icons {
     }
 
     .about .content-wrapper .about-content p {
-        width: 46%;
+        width: 100%;
     }
 
     /* Work */
