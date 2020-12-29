@@ -371,8 +371,14 @@ footer .social-icons {
 }
 
 .projects h3 {
-    margin: 30px 0 30px;
+    margin: 30px 0 20px;
     width: 100%;
+    text-align: center;
+}
+
+.projects p {
+    font-family: 'Lora', serif;
+    font-size: .95em;
     text-align: center;
 }
 
@@ -394,52 +400,64 @@ footer .social-icons {
    Sit Conmigo Page
    ======================================================================= */
 
-.responsive {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-flow: row wrap;
-   background-color: #f9ceb7;
-}
+   /* Info */
 
-.responsive article {
-    display: flex;
-    flex-flow: column wrap;
+   .project-specific {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-flow: column wrap;
+   }
 
-}
+   .project-specific h2 {
+       font-size: 1.8em;
+   }
 
-#mobile {
-    margin-bottom: 20px;
-}
+    .project-specific p {
+       font-size: 1em;
+       line-height: 1.95;
+       color: #7f7f7f;
+       margin: 35px 0;
+   }
 
-.responsive h2 {
-    font-size: 1.8em;
-    text-transform: uppercase;
-}
+   .project-specific #mobile p, .project-specific #tablet p {
+       margin-bottom: 0;
+   }
 
-.responsive h3 {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
+   .project-details figure {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-flow: column wrap;
+   }
 
-.responsive #tablet h3 {
-    margin: 40px 33px;
-    flex-basis: 100%;
-}
+   .project-details figure a {
+       margin-bottom: 35px;
+   }
 
-.responsive #mobile h3 {
-    margin: 20px 33px 0;
-    display: flex;
-    justify-content: center;
-}
+    [style*="--aspect-ratio"] > :first-child {
+      width: 100%;
+    }
+    [style*="--aspect-ratio"] > img {
+      height: auto;
+    }
+    @supports (--custom:property) {
+      [style*="--aspect-ratio"] {
+        position: relative;
+      }
+      [style*="--aspect-ratio"]::before {
+        content: "";
+        display: block;
+        padding-bottom: calc(100% / (var(--aspect-ratio)));
+      }
+      [style*="--aspect-ratio"] > :first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+      }
+    }
 
-.responsive h3 a {
-    color: #828282;
-}
-
-.responsive figure {
-    border: 0px solid #ebebeb;
 }
 
    /* ==========================================================================
@@ -658,44 +676,24 @@ footer .social-icons {
     Sit Conmigo Page
     ======================================================================= */
 
-    .responsive h2 {
-        margin: 0px 0px 35px 0;
-        text-align: center;
+    .project-specific {
+        max-width: 90%;
+        margin: 0 60px;
     }
 
-    .responsive #mobile h3 {
-        margin: 30px 0 30px;
-    }
-
-    .responsive #tablet h3 {
-        margin-top: 30px;
-    }
-
-    .responsive #desktop h3 {
-        margin-bottom: 10px;
-    }
-
-    .responsive-items article {
+    #summary {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-flow: row-reverse nowrap;
+        justify-content: space-between;
+        align-content: center;
     }
 
-    .responsive-items article #mobile {
-        display: flex;
-        justify-content: center;
+    #desc {
+        width: 350px;
     }
 
-    #mobile figure {
-        max-width: 35%;
-    }
-
-    #tablet figure {
-        max-width: 65%;
-    }
-
-    #desktop figure {
-        max-width: 100%;
+    #mobile p, #tablet p, #desktop p {
+        margin-top: 60px;
     }
 }
 
@@ -803,17 +801,21 @@ footer .social-icons {
    Sit Conmigo Page
    ========================================================================== */
 
-    .responsive h3 {
-        font-size: 1.3em;
+   #desc {
+       flex-basis: 650px;
+   }
+
+    .project-details figure {
+        display: flex;
     }
 
-    .responsive #mobile h3 {
-        margin-top: 50px;
-    }
+   .project-details img {
+       flex-basis: 50px;
 
-    .responsive #desktop h3 {
-        margin-top: 30px;
-    }
+   }
+
+
+
 }
 
 
