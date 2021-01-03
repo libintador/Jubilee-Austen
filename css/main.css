@@ -842,21 +842,56 @@ footer .social-icons {
        flex-basis: 650px;
    }
 
-    .project-details #mobile figure {
-        display: flex;
-        justify-content: 
+    .project-specific #mobile p {
+        margin-bottom: 60px;
+    }
 
+    .project-specific #desktop p {
+        margin-top: 20px;
+    }
+
+    .project-details #mobile figure a {
+        display: flex;
+        width: 27%;
     }
 
     .project-details #mobile img {
-        width: 37%;
+        width: 110%;
     }
-
 
     .project-details #mobile iframe {
         width: 20%;
     }
 
+    .project-details #tablet figure {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+    }
+
+    .project-details #tablet figure a {
+        display: flex;
+        width: 42%;
+    }
+
+    .project-details #tablet img {
+        width: 142%;
+        margin-left: 0px;
+    }
+
+    .project-details #desktop figure {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .project-details #desktop figure a {
+        width: 53%;
+        margin-bottom: 0px;
+    }
+
+    .project-details #desktop img {
+        width: 90%;
+        margin-left: 0px;
+    }
 
 }
 
