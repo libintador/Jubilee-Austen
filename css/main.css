@@ -258,6 +258,20 @@ footer .social-icons {
     padding: 0 50px;
 }
 
+footer .copyright p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: .95em;
+    text-align: center;
+    color: #7f7f7f;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+footer .copyright p span {
+    font-weight: bold;
+}
+
+
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
@@ -447,29 +461,6 @@ footer .social-icons {
        width: 123%;
        margin-left: -39px;
    }
-
-   /*[style*="--aspect-ratio"] > :first-child {
-      width: 100%;
-    }
-    [style*="--aspect-ratio"] > img {
-      height: auto;
-    }
-    @supports (--custom:property) {
-      [style*="--aspect-ratio"] {
-        position: relative;
-      }
-      [style*="--aspect-ratio"]::before {
-        content: "";
-        display: block;
-        padding-bottom: calc(100% / (var(--aspect-ratio)));
-      }
-      [style*="--aspect-ratio"] > :first-child {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-      }
-    }*/
 
 }
 
