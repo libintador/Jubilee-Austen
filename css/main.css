@@ -408,7 +408,7 @@ footer .copyright p span {
     text-align: center;
 }
 
-.projects .project-items {
+.projects .project-items, .project-items-solo {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -418,7 +418,7 @@ footer .copyright p span {
     margin-bottom: 30px;
 }
 
-.project-items h3 a {
+.project-items h3 a, .project-items-solo h3 a {
     color: #828282;
 }
 
@@ -623,6 +623,10 @@ footer .copyright p span {
 
     .work-items h3 {
         width: 90%;
+    }
+
+    .projects .project-items {
+        align-items: center;
     }
 
 
